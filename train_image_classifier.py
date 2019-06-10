@@ -13,17 +13,17 @@ slim = tf.contrib.slim
 flags = tf.app.flags
 
 flags.DEFINE_string('leftEyeRecord_path',
-                    'E:/driveTF5.27/DriverGazeCapture/dataBase/finalData/tfrecord/train_leftEye.tfrecord',
+                    './tfrecord/train_leftEye.tfrecord',
                     'Path to training tfrecord file.')
 flags.DEFINE_string('rightEyeRecord_path',
-                    'E:/driveTF5.27/DriverGazeCapture/dataBase/finalData/tfrecord/train_rightEye.tfrecord',
+                    './tfrecord/train_rightEye.tfrecord',
                     'Path to training tfrecord file.')
 flags.DEFINE_string('faceRecord_path',
-                    'E:/driveTF5.27/DriverGazeCapture/dataBase/finalData/tfrecord/train_face.tfrecord',
+                    './tfrecord/train_face.tfrecord',
                     'Path to training tfrecord file.')
 
 flags.DEFINE_string('logdir',
-                    'E:/driveTF5.27/DriverGazeCapture/log/train/train/train/',
+                    './train/train/',
                     'Path to log directory.')
 tf.app.flags.DEFINE_integer(
     'labels_offset', 0,
